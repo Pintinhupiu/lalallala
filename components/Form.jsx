@@ -97,7 +97,7 @@ const Form = () => {
               />
               <input
                 className="w-full outline-none bg-white p-3 rounded"
-                type="tel"
+                type="text"
                 placeholder="Nome da empresa"
                 value={enterprise}
                 onChange={(e) => setEnterprise(e.target.value)}
