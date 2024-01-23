@@ -7,6 +7,10 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
 const Form = () => {
+
+  
+  const { toast } = useToast()
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -116,6 +120,7 @@ const Form = () => {
             <button
               type="submit"
               className="text-white mt-6 w-full bg-[#1cbae9] p-3 mb-3 rounded"
+              onClick={() => toast ({title:"Email enviado!",description:"Recebemos seu email, iremos responder o mais rápido possível"})}
             >
               RECEBER MAIS INFORMAÇÕES
             </button>
