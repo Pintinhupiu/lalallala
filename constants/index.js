@@ -40,7 +40,7 @@ export const FEATURES = [
 export const CONTACTS = [
   {
     title: "Preencha o formulário",
-    icon: "/GOOGLE-FORMS (1).png",
+    icon: "/google-forms.png",
     variant: "green",
     description:
       "Envie suas informações de contato. Garantimos a total segurança e privacidade dos seus dados e nos comprometemos a ",
