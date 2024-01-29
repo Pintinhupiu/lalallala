@@ -5,11 +5,13 @@ import { CONTACTS } from "@/constants";
 import { DropdownForm } from "@/constants";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import { useToast } from "./ui/use-toast";
+
 
 const Form = () => {
 
   
-  const { toast } = useToast()
+  const {toast} = useToast()
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -120,7 +122,7 @@ const Form = () => {
             <button
               type="submit"
               className="text-white mt-6 w-full bg-[#1cbae9] p-3 mb-3 rounded"
-              onClick={() => toast ({title:"Email enviado!",description:"Recebemos seu email, iremos responder o mais rápido possível"})}
+              onClick={() => {toast({title:"Email enviado!", description:"Recebemos seu email, iremos responder o mais rápido possível"})}}
             >
               RECEBER MAIS INFORMAÇÕES
             </button>

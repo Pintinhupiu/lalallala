@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         className={`${montserrat.className} scrollbar scrollbar-thumb-secundary-blue`}
       >
         <main className="relative overflow-hidden">{children}</main>
-        <Toaster/>
+        <Toaster />
       </body>
     </html>
   );
