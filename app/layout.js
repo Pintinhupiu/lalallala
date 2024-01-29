@@ -1,6 +1,5 @@
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "600"] });
 
@@ -16,7 +15,6 @@ export default function RootLayout({ children }) {
         className={`${montserrat.className} scrollbar scrollbar-thumb-secundary-blue`}
       >
         <main className="relative overflow-hidden">{children}</main>
-        <Toaster />
       </body>
     </html>
   );
