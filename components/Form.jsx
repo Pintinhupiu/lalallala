@@ -65,7 +65,7 @@ const Form = () => {
 
   return (
     <section className="w-full bg-[#1b2f53] mb-10" id="form">
-      <div className="max-container padding-container flex flex-col items-center gap-20 py-10 pb-32 md:gap-40 lg:py-20 lg:flex-row">
+      <div className="max-container padding-container flex flex-col items-center lg:gap-52 gap-28 py-10 pb-32 md:gap-40 lg:py-20 lg:flex-row">
         <div className="z-20 flex w-full flex-col lg:w-[50%]">
           <div className="relative flex flex-col lg:items-start items-center">
             <h2 className="font-bold text-[35px] lg:text-left text-center leading-[120%] text-white ">
@@ -85,7 +85,7 @@ const Form = () => {
             ))}
           </ul>
         </div>
-        <div className="lg:w-[50%]">
+        <div className="lg:w-[50%] w-[100%]">
           <form
             className="flex-1  p-8 rounded-[20px] border-2 border-white"
             onSubmit={handleSubmit(handleFormSubmit)}
@@ -142,7 +142,7 @@ const Form = () => {
                   {...register("invoice")}
                   className="w-full outline-none bg-white p-3 rounded focus:shadow-md focus:shadow-secundary-blue"
                 >
-                  <option>Selecione o Faturmento mensal</option>
+                  <option value={""}>Selecione o Faturmento mensal</option>
                   {DropdownForm.map((item) => (
                     <option value={item}>{item}</option>
                   ))}
