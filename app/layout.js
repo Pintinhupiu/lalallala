@@ -1,5 +1,6 @@
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
+import MicrosoftClarity from "./metrics/microsoft-clarity";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "600"] });
 
@@ -14,7 +15,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.className} scrollbar scrollbar-thumb-secundary-blue`}
       >
-        <main className="relative overflow-hidden">{children}</main>
+        <main className="relative overflow-hidden">
+          {children}
+          <MicrosoftClarity />
+        </main>
       </body>
     </html>
   );
